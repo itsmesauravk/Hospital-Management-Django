@@ -1,0 +1,66 @@
+python -m venv django.env
+
+
+django.env\Scripts\activate
+
+pip install django
+
+
+# for starting project
+
+django-admin startproject foldername .
+
+
+#for starting server
+python manage.py runserver
+
+#for changing ports (default 8000)
+python manage.py runserver 0.0.0.0:5000
+
+
+#for creating new app
+
+python manage.py startapp appname
+
+#migration (ORM) 
+python manage.py makemigrations
+#for migrating
+python manage.py migrate
+
+
+#making superuser
+py manage.py createsuperuser
+
+id,pass = admin
+email = admin@gmail.com
+
+
+# Django function
+
+# Django rest framework
+pip install djangorestframework   (on activate env)
+
+
+
+#inside app  (create)
+- serializers.py  ->file make for each file to parse the data for each app
+
+- urls.py   -> to make routes
+
+
+
+# to run orm command on shell
+ python manage.py shell
+
+ #inside shell
+ from organization.models import Company  
+ Company.objects.all() 
+ Company.objects.filter(name='Test')     
+
+
+# install djangorestframework-simplejwt
+pip install djangorestframework-simplejwt
+
+# add files from the documentation 
+documentation link : https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html
+add files in urls and setting 

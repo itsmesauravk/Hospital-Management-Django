@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+django.env/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+local_settings.py
+instance/
+.DS_Store
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.swp
+
+# Pip / Poetry / Pipenv
+pip-log.txt
+pip-delete-this-directory.txt
+Pipfile.lock
+poetry.lock
+
+# Coverage / Testing
+htmlcov/
+.coverage
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.log
+nosetests.xml
+test_db.sqlite3
+
+# Migrations
+**/migrations/*.pyc
+**/migrations/__pycache__/
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# System
+Thumbs.db
+.DS_Store
+
+# Docker
+*.pid
+*.pid.lock
+
+# Static files (if using collectstatic)
+static/
